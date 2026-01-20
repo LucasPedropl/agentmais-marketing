@@ -44,16 +44,22 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex justify-center">
             <div className="absolute -top-10 -right-10 w-72 h-72 bg-green-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
             <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-300 rounded-full filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
-            <img 
-              src="https://picsum.photos/800/800?random=1" 
-              alt="Dashboard Agent Mais" 
-              className="relative rounded-2xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500"
-            />
+            
+            <div className="relative mx-auto w-full max-w-[340px] aspect-[9/16] rounded-[2.5rem] shadow-2xl border-8 border-slate-900 bg-black overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <iframe 
+                    className="w-full h-full object-cover"
+                    src="https://www.youtube.com/embed/WVu4qc-p8M0?autoplay=0&controls=1&rel=0&loop=1&playlist=WVu4qc-p8M0" 
+                    title="Agent Mais Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen
+                ></iframe>
+            </div>
+
              {/* Floating Badge */}
-             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3 border border-slate-100 animate-bounce" style={{animationDuration: '3s'}}>
+             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3 border border-slate-100 animate-bounce z-20" style={{animationDuration: '3s'}}>
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 </div>

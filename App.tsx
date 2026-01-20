@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import ComparisonTable from './components/ComparisonTable';
 import Journey from './components/Journey';
+import FeedbackSection from './components/FeedbackSection';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -15,6 +17,8 @@ const App: React.FC = () => {
         <Features />
         <ComparisonTable />
         <Journey />
+        <FeedbackSection />
+        <Testimonials />
       </main>
       <Footer />
     </div>

@@ -23,3 +23,12 @@ export interface StepItem {
   description: string;
   icon: LucideIcon;
 }
+
+export interface TestimonialItem {
+  id: string;
+  name: string;
+  role: string;
+  company: string;
+  content: string;
+  image: string;
+}
