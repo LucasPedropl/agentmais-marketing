@@ -10,7 +10,8 @@ import {
   Smartphone,
   Zap,
   TrendingUp,
-  ShieldCheck
+  ShieldCheck,
+  Star
 } from 'lucide-react';
 import { FeatureItem, ComparisonRow, StepItem, BenefitItem, TestimonialItem } from './types';
 
@@ -94,15 +95,25 @@ export const FEATURES: FeatureItem[] = [
       'Automatiza fluxo e reduz espera.'
     ],
     icon: CalendarCheck
+  },
+  {
+    id: 'nps',
+    title: 'Pesquisa de Satisfação',
+    description: [
+      'Envio automático pós-atendimento.',
+      'Cálculo de NPS em tempo real.',
+      'Monitore a qualidade do serviço.'
+    ],
+    icon: Star
   }
 ];
 
 export const COMPARISON_DATA: ComparisonRow[] = [
   { feature: 'Check-in de Clube', clientImpact: 'Segurança no acesso e participação garantida', companyImpact: 'Controle eficiente de membros e cotas' },
-  // Removed 'Promoções + Wi-Fi' row as requested
   { feature: 'Envio de Promoções', clientImpact: 'Recebimento de ofertas exclusivas', companyImpact: 'Facilita campanhas e fidelização' },
   { feature: 'Pagamento via PIX', clientImpact: 'Rápido e prático sem sair do app', companyImpact: 'Acelera vendas e reduz barreiras' },
   { feature: 'QR-Code para Conversa', clientImpact: 'Contato direto sem salvar número', companyImpact: 'Simplifica atendimento e gera leads' },
+  { feature: 'Pesquisa de Satisfação', clientImpact: 'Sente-se ouvido e valorizado', companyImpact: 'Correção rápida de falhas e métricas de NPS' },
   { feature: 'Delivery / Eventos', clientImpact: 'Acompanhamento em tempo real', companyImpact: 'Organização e redução de filas' },
 ];
 
@@ -113,6 +124,7 @@ export const JOURNEY_STEPS: StepItem[] = [
   { title: 'Pedido', description: 'Faz o pedido pelo cardápio digital.', icon: ListOrdered },
   { title: 'Pagamento', description: 'Paga via PIX direto na conversa.', icon: BadgeDollarSign },
   { title: 'Notificação', description: 'Recebe mensagem quando o pedido está pronto.', icon: MessageCircle },
+  { title: 'Avaliação', description: 'Responde à pesquisa de satisfação automática.', icon: Star },
 ];
 
 export const GENERAL_BENEFITS: BenefitItem[] = [
