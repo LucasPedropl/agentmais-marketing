@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
               O sistema definitivo para WhatsApp
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
-              Transforme o WhatsApp em uma <span className="text-green-600">Máquina de Vendas</span> e Atendimento
+              Transforme seu negócio em uma <span className="text-green-600">Máquina de Vendas</span> e Atendimento
             </h1>
             <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-lg">
               Check-in, Wi-Fi, Cardápio Digital e Pagamentos. Tudo automatizado para clubes, eventos e restaurantes.
